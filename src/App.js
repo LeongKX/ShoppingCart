@@ -28,7 +28,7 @@ function App() {
     <div>
       <h1>Shopping Cart</h1>
       <button className="btn btn-primary my-3" onClick={handleFilter}>
-        {showAllItems ? "Show All Items Only" : "Show Sale Items Only"}
+        {showAllItems ? "Show Sale Items Only" : "Show All Items Only"}
       </button>
       {filteredOnSale.map((item) => (
         <p
