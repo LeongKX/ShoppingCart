@@ -25,13 +25,13 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="p-5">
       <h1>Shopping Cart</h1>
       <button className="btn btn-primary my-3" onClick={handleFilter}>
         {showAllItems ? "Show Sale Items Only" : "Show All Items Only"}
       </button>
       {filteredOnSale.map((item) => (
-        <p
+        <div
           className="d-flex  justify-content-between border border-2 rounded my-3"
           key={item.id}
         >
@@ -42,7 +42,7 @@ function App() {
             )}
           </div>
           <h3>${item.price}</h3>
-        </p>
+        </div>
       ))}
     </div>
   );
